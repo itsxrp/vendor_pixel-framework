@@ -76,13 +76,18 @@
         android:summary="@string/battery_percentage_description"
         settings:controller="com.android.settings.display.BatteryPercentagePreferenceController" />
 
-<!-- QS Battery estimates -->
+    <!-- QS Battery estimates -->
     <com.pixys.support.preference.SystemSettingSwitchPreference
         android:key="qs_show_battery_estimate"
         android:title="@string/qs_show_battery_estimate_title"
         android:summaryOn="@string/qs_show_battery_estimate_summary_on"
         android:summaryOff="@string/qs_show_battery_estimate_summary_off"
         android:defaultValue="true" />
+
+    <com.android.settings.fuelgauge.batteryusage.PowerGaugePreference
+        android:key="battery_temperature"
+        android:title="@string/battery_temperature"
+        android:selectable="false" />
 
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
